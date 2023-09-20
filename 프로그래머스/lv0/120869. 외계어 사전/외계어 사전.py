@@ -1,4 +1,4 @@
-from itertools import permutations
+from itertools import permutations # 순열
 
 def solution(spell, dic):
     lst = []
@@ -9,3 +9,5 @@ def solution(spell, dic):
         if word in lst:
             return 1
     return 2
+
+# https://pearlluck.tistory.com/468
