@@ -13,8 +13,3 @@ def solution(l, r):
     if len(answer) == 0:
         answer.append(-1)
     return answer
-    #     if str(i) not in num:
-    #         continue
-    #     else:
-    #         print(i)
-    # return answer
