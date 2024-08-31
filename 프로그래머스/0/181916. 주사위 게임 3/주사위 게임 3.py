@@ -20,5 +20,4 @@ def solution(a, b, c, d):
         answer = lst[0] * lst[1]
     else:
         answer = lst[0]
-    print(lst[0], lst[2], answer, (lst[0] + lst[2]) * abs(lst[0] - lst[2]))
     return answer
