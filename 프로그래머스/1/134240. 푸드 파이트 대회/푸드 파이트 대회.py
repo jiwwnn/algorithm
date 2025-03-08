@@ -2,21 +2,6 @@
 #     answer = []
 #     for i, v in enumerate(food[1:]):
 #         if v >= 2:
-#             count = v // 2
-#             answer.extend([i+1]*count)
-            
-
-#     water_idx = len(answer) // 2
-#     answer.insert(water_idx, 0)     
-#     answer = str(answer)
-#     return answer
-
-
-
-# def solution(food):
-#     answer = []
-#     for i, v in enumerate(food[1:]):
-#         if v >= 2:
 #             if v % 2 != 0:
 #             v -= 1
 #             for num in range(v):
@@ -25,7 +10,7 @@
 
 #     water_idx = len(answer) // 2
 #     answer.insert(water_idx, 0)     
-#     answer = str(answer)
+#     answer = str(answer) # [1,2,3] -> '[1,2,3]'
 #     return answer
 
 
@@ -37,4 +22,4 @@ def solution(food):
             left.extend([i+1]*count)
         
     answer = left + [0] + left[::-1] 
-    return ''.join(map(str, answer))
+    return ''.join(map(str, answer)) 
