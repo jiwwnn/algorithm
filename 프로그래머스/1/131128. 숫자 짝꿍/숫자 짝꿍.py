@@ -5,7 +5,7 @@ def solution(X, Y):
     Y_set = set(Y)
     
     for i in X_set:
-        if i in Y_set:
+        if i in Y_set:     # common_numbers = set(X) & set(Y)
             count = min(X.count(i), Y.count(i))
             answer += i * count
         
@@ -17,3 +17,5 @@ def solution(X, Y):
         return '0'
     else:
         return answer
+    
+    
