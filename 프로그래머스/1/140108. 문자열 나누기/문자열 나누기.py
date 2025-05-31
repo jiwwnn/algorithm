@@ -1,23 +1,23 @@
-# def solution(s):
-#     count = 0
-#     dic = {}
+def solution(s):
+    count = 0
+    dic = {}
 
-#     for i, j in enumerate(s):        
-#         if j not in dic:
-#             dic[j] = 1
-#         else:
-#             dic[j] += 1
+    for i, j in enumerate(s):        
+        if j not in dic:
+            dic[j] = 1
+        else:
+            dic[j] += 1
             
-#         val = list(dic.values())
-#         if len(val) >= 2 and len(set(val)) == 1:
-#             count += 1
-#             dic = {}
-#             s = s[i+1:]
+        val = list(dic.values())
+        if len(val) >= 2 and len(set(val)) == 1:
+            count += 1
+            dic = {}
+            s = s[i+1:]
             
-#         if i == len(s)-1:
-#             count += 1
+        if i == len(s)-1:
+            count += 1
 
-#     return count
+    return count
 
 def solution(s):
     count = 0
