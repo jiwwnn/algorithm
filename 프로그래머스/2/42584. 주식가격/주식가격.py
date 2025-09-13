@@ -28,4 +28,4 @@ def solution(prices):
         j = stack.pop()
         answer[j] = n - 1 - j
 
-    return answer
+    return answer # 한 번의 순회만으로 가능
